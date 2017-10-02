@@ -1,7 +1,7 @@
 i.fa-heart {
   color: #D23333;
 }
-.avatar {
+.team__avatar {
   border-radius: 50%;
   max-width: 150px;
   min-width: 50px;
@@ -15,6 +15,7 @@ i.fa-heart {
   display: flex;
   height: calc(100vh - 170px);
   justify-content: space-around;
+  min-height: 400px;
 }
 .team__content {
 

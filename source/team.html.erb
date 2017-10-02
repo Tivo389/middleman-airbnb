@@ -9,7 +9,7 @@ title: Le Wagon - Middleman - Team
 
       <% data.users.each do |member| %>
         <div class="team__member text-center col-xs-6 col-sm-6">
-          <%= image_tag "#{member.name.downcase.gsub(' ', '')}.jpg", class: "avatar shadow" %>
+          <%= image_tag "#{member.name.downcase.gsub(' ', '')}.jpg", class: "team__avatar shadow" %>
           <h5><%= member.name %></h5>
           <% link_to "https://github.com/#{member.github_nickname}", target: "_blank" do %>
             <i class="fa fa-github"></i> <%= member.github_nickname %>
