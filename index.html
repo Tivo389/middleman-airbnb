@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Le Wagon - Middleman</title>
-    <link href="stylesheets/application-02e299ff.css" rel="stylesheet" />
+    <link href="stylesheets/application-868cf298.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
     <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
@@ -24,7 +24,7 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
+    <a href="/team.html" class="navbar-wagon-item navbar-wagon-link">About</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
 
@@ -47,7 +47,7 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Host</a></li>
+        <li><a href="/team.html">About</a></li>
         <li><a href="#">Trips</a></li>
         <li><a href="#">Messagese</a></li>
       </ul>
@@ -59,9 +59,32 @@
     <!-- This injects the index.html.erb  -->
     <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
   <div class="banner-content">
-    <h1>Le Wagon Berlin</h1>
-    <p>Learn to code with us in Berlin</p>
-    <a class="btn btn-primary btn-lg">Start now</a>
+    <h1>Welcome Home</h1>
+    <p>Book unique homes and experience a city like a local.</p>
+    <div class="container">
+
+      <div class="row well-lg">
+        <form class="" action="">
+
+          <div class="col-xs-12 col-sm-4">
+            <input id="name--first" class="form-control" type="text" placeholder="Where?">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <input id="name--first" class="form-control" type="text" placeholder="When?">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <select id="reference" class="form-control" name="reference">
+              <option value="facebook">1 guests</option>
+              <option value="google">2 guests</option>
+              <option value="friend">3 guests</option>
+            </select>
+          </div>
+          <input class="btn btn-primary well-sm" type="submit" value="Search">
+
+        </form>
+      </div>
+
+    </div>
   </div>
 </div>
 <h3 class="text-center">Recent flats</h3>
