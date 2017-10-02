@@ -1,0 +1,40 @@
+---
+title: Le Wagon - Middleman - Team
+---
+
+<div class="team__container well-lg">
+  <div class="team__content">
+    <h4 class="text-center">This template was built with <i class="fa fa-heart"></i> by</h4>
+    <div class="row">
+
+      <% data.users.each do |member| %>
+        <div class="team__member text-center col-xs-6 col-sm-6">
+          <%= image_tag "#{member.name.downcase.gsub(' ', '')}.jpg", class: "avatar shadow" %>
+          <h5><%= member.name %></h5>
+          <% link_to "https://github.com/#{member.github_nickname}", target: "_blank" do %>
+            <i class="fa fa-github"></i> <%= member.github_nickname %>
+          <% end %>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!--
+<ul class="list-inline text-center">
+  <% ["papillard", "ssaunier", "monsieurpaillard"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+      <h3><%= gh_username.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+-->
